@@ -199,11 +199,11 @@ checkoutBtn.addEventListener("click", function () {
     }).join("")
 
     const message = encodeURIComponent(cartItems)
-    const phone = "8194239002"
+    const phone = "Numero_aqui"
 
     window.open(`https://wa.me/${phone}?text=${message} *Total:* ${cartTotal.textContent} 
          *Observação*: ${observationInput.value}
-         *Endereço*: ${addressInput.value} `, "_blank");
+         *Endereço*: ${addressInput.value}`, "_blank");
 
     cart = [];
     updateCartModal();
@@ -215,7 +215,7 @@ checkoutBtn.addEventListener("click", function () {
 function checkRestaurantOpen() {
     const data = new Date();
     const hora = data.getHours();
-    return hora >= 17 && hora < 22;
+    return hora >= 17 && hora < 23;
     //true = restaurante está aberto 
 }
 
