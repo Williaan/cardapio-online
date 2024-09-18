@@ -35,9 +35,21 @@ menu.addEventListener("click", function (event) {
 
     if (parentButton) {
         const name = parentButton.getAttribute("data-name")
-        const price = parseFloat(parentButton.getAttribute("data-price"))
+        const price = parseFloat(parentButton.getAttribute("data-price"));
+
         addToCart(name, price);
 
+        Toastify({
+            text: "Item adicionado!",
+            duration: 3000,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+                background: "#3CB371",
+            },
+        }).showToast();
     }
 
 });
@@ -83,7 +95,6 @@ function updateCartModal() {
           <p>Qtd: ${item.quantity}</p>
           <p class="font-medium mt-2">R$ ${(item.price * item.quantity).toFixed(2)}</p>
         </div>
-
 
         <button class="remove-from-cart-btn" data-name="${item.name}">
           Remover

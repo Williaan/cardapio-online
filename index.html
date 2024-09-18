@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth md:scroll-auto">
 
 <head>
     <meta charset="UTF-8">
@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center mb-24">
         <div class="w-full h-full flex flex-col justify-center items-center">
             <img src="./assets/hamb-1.png" alt="Logo hamburgueria"
                 class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" />
@@ -41,10 +41,24 @@
                 <span class="text-white font-medium">Seg á Dom - 17:00 ás 23:00</span>
             </div>
         </div>
+        <nav class="w-full h-[60px] mt-4">
+            <ul class="flex items-center justify-center gap-4 text-center py-4 text-sm md:text-2xl font-bold ">
+                <a href="#burguer">
+                    <li class="hover:text-gray-800">Hambúrguer</li>
+                </a>
+                <a href="#drinks">
+                    <li class="hover:text-gray-800">Bebidas</li>
+                </a>
+                </a>
+                <a href="#combo">
+                    <li class="hover:text-gray-800">Combos</li>
+                </a>
+            </ul>
+        </nav>
     </header>
 
 
-    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Nossas opções</h2>
+    <h2 class="text-2xl md:text-3xl text-center font-bold mt-12 mb-11" id="burguer">Hambúrgueres</h2>
 
     <div id="menu">
 
@@ -52,7 +66,7 @@
 
             <div class="flex gap-2 hover:bg-gray-300 duration-300 rounded-md px-1">
                 <img src="./assets/hamb-1.png" alt="Hamburguer Salad"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" title="Ilustrativa">
 
                 <div>
                     <p class="font-bold">Hamburguer Salad</p>
@@ -73,17 +87,15 @@
                 </div>
             </div>
 
-
             <!----------------------------------------------------------------------->
-
 
             <div class="flex gap-2 hover:bg-gray-300 duration-300 rounded-md px-1">
                 <img src="./assets/hamb-2.png" alt="Hamburguer Duplo"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" title="Ilustrativa">
 
 
                 <div>
-                    <p class="font-bold">Hamburguer Duplo</p>
+                    <p class=" font-bold">Hamburguer Duplo</p>
                     <p class="text-sm">
                         Dois hambúrgueres (carne 100% bovina),
                         queijo processado sabor cheddar, cebola,
@@ -102,7 +114,7 @@
             <!-------------------------------------------------------------------------->
             <div class="flex gap-2 hover:bg-gray-300 duration-300 rounded-md px-1">
                 <img src="./assets/hamb-3.png" alt="Hamburguer Smash"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" title="Ilustrativa">
 
                 <div>
                     <p class="font-bold">Hamburguer Smash</p>
@@ -121,12 +133,11 @@
                 </div>
             </div>
 
-
             <!---------------------------------------------------------------------------->
 
             <div class="flex gap-2 hover:bg-gray-300 duration-300 rounded-md px-1">
                 <img src="./assets/hamb-4.png" alt="Hamburguer da Casa"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" title="Ilustrativa">
 
                 <div>
                     <p class="font-bold">Hamburguer da Casa</p>
@@ -150,7 +161,7 @@
 
             <div class="flex gap-2 hover:bg-gray-300 duration-300 rounded-md px-1">
                 <img src="./assets/hamb-5.png" alt="Hamburguer X-Salada"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" title="Ilustrativa">
 
                 <div>
                     <p class="font-bold">Hamburguer X-Salada</p>
@@ -173,7 +184,7 @@
 
             <div class="flex gap-2 hover:bg-gray-300 duration-300 rounded-md px-1">
                 <img src="./assets/hamb-6.png" alt="Hamburguer X-Tudo"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" title="Ilustrativa">
 
                 <div>
                     <p class="font-bold">Hamburguer X-Tudo</p>
@@ -196,7 +207,7 @@
 
             <div class="flex gap-2 hover:bg-gray-300 duration-300 rounded-md px-1">
                 <img src="./assets/hamb-7.png" alt="Hamburguer Chicken"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" title="Ilustrativa">
 
                 <div>
                     <p class="font-bold">Hamburguer Chicken</p>
@@ -216,12 +227,11 @@
                 </div>
             </div>
 
-
             <!----------------------------------------------------------------------------->
 
             <div class="flex gap-2 hover:bg-gray-300 duration-300 rounded-md px-1">
                 <img src="./assets/hamb-8.png" alt="Hamburguer Vegano"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" title="Ilustrativa">
 
                 <div>
                     <p class="font-bold">Hamburguer Vegano</p>
@@ -241,10 +251,12 @@
                 </div>
             </div>
         </main>
+
         <hr>
+        <!------------------------------Bebidas----------------------------------------------->
 
         <div class="max-auto max-w-7xl px-2 my-2 h-16">
-            <h2 class="font-bold text-3xl text-center my-8">Bebidas</h2>
+            <h2 class="font-bold text-3xl text-center my-8" id="drinks">Bebidas</h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
@@ -252,7 +264,7 @@
             <div class="flex gap-2 w-full my-4 hover:bg-gray-300 duration-300 rounded-md px-1">
 
                 <img src="./assets/refri-1.png" alt="Coca-cola"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" title="Ilustrativa">
 
                 <div class="w-full">
                     <p class="font-bold">Coca-cola</p>
@@ -269,8 +281,26 @@
 
             <div class="flex gap-2 w-full hover:bg-gray-300 duration-300 rounded-md px-1">
 
+                <img src="./assets/refri0.png" alt="Guarana Lata"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" title="Ilustrativa">
+
+                <div class="w-full">
+                    <p class="font-bold">Pepsi Lata</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 6.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Guarana Lata"
+                            data-price="6.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 w-full hover:bg-gray-300 duration-300 rounded-md px-1">
+
                 <img src="./assets/refri-2.png" alt="Guarana Lata"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" title="Ilustrativa">
 
                 <div class="w-full">
                     <p class="font-bold">Guaraná Lata</p>
@@ -284,7 +314,165 @@
                     </div>
                 </div>
             </div>
+
+            <div class="flex gap-2 w-full hover:bg-gray-300 duration-300 rounded-md px-1">
+
+                <img src="./assets/refri5.png" alt="Guarana Lata"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" title="Ilustrativa">
+
+                <div class="w-full">
+                    <p class="font-bold">Fanta Lata</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 6.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Guarana Lata"
+                            data-price="6.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 w-full hover:bg-gray-300 duration-300 rounded-md px-1">
+
+                <img src="./assets/refri4.png" alt="Guarana Lata"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" title="Ilustrativa">
+
+                <div class="w-full">
+                    <p class="font-bold">Pepsi 1,5 L</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 10.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Guarana Lata"
+                            data-price="10.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 w-full hover:bg-gray-300 duration-300 rounded-md px-1">
+
+                <img src="./assets/refri4.png" alt="Guarana Lata"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" title="Ilustrativa">
+
+                <div class="w-full">
+                    <p class="font-bold">Pepsi 1,5 L</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 10.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Guarana Lata"
+                            data-price="10.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <hr>
+        <!------------------------------Combos----------------------------------------------->
+
+        <div class="max-auto max-w-7xl px-2 my-2 h-16">
+            <h2 class="font-bold text-3xl text-center my-8" id="combo">Combos</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+            <div class="flex gap-2 w-full my-4 hover:bg-gray-300 duration-300 rounded-md px-1">
+
+                <img src="./assets/combo1.jpg" alt="Combo 1"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" title="Ilustrativa">
+
+                <div class="w-full">
+                    <p class="font-bold">Combo tradicional</p>
+                    <p class="text-sm">
+                        É um prato que consiste em um hambúrguer servido em pão,
+                        acompanhado de outros ingredientes como alface,
+                        tomate, cebola e maionese.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 35.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Combo tradicional"
+                            data-price="35.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 w-full hover:bg-gray-300 duration-300 rounded-md px-1">
+
+                <img src="./assets/combo2.jpg" alt="Combo 2"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" title="Ilustrativa">
+
+                <div class="w-full">
+                    <p class="font-bold">Combo tradicional</p>
+                    <p class="text-sm">
+                        É um prato que consiste em um hambúrguer servido em pão,
+                        acompanhado de outros ingredientes como alface,
+                        tomate, cebola e maionese.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 35.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Combo tradicional"
+                            data-price="35.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 w-full hover:bg-gray-300 duration-300 rounded-md px-1">
+
+                <img src="./assets/combo3.jpeg" alt="Combo Família"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" title="Ilustrativa">
+
+                <div class="w-full">
+                    <p class="font-bold">Combo Família</p>
+                    <p class="text-sm">
+                        É um prato que consiste em um hambúrguer servido em pão,
+                        acompanhado de outros ingredientes como alface,
+                        tomate, cebola e maionese.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 90.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Combo Família"
+                            data-price="90.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 w-full hover:bg-gray-300 duration-300 rounded-md px-1">
+
+                <img src="./assets/combo4.jpg" alt="Combo Família"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" title="Ilustrativa">
+
+                <div class="w-full">
+                    <p class="font-bold">Combo Família</p>
+                    <p class="text-sm">
+                        É um prato que consiste em um hambúrguer servido em pão,
+                        acompanhado de outros ingredientes como alface,
+                        tomate, cebola e maionese.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 96.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Guarana Lata"
+                            data-price="96.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
 
@@ -314,15 +502,15 @@
             <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
 
             <div class="w-full flex items-center justify-between mt-5">
-                <button id="close-modal-btn">Fechar</button>
-                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
+                <button id="close-modal-btn" class="bg-red-500 text-white px-4 py-1 rounded">Fechar</button>
+                <button id="checkout-btn" class="bg-green-600 text-white px-4 py-1 rounded">Finalizar Pedido</button>
             </div>
         </div>
     </div>
 
     <!-------------FIM MODAL--------------------------->
 
-    <footer class="w-full bg-red-500  py-3 fixed bottom-0 z-40 flex items-center justify-center">
+    <footer class="w-full bg-green-600	  py-3 fixed bottom-0 z-40 flex items-center justify-center">
         <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
             (<span id="cart-count">0</span>)
             Meus Pedidos
